@@ -19,7 +19,7 @@ table {
 }
 
 tr:nth-child(odd) {
-    background-color: blue;
+    background-color: lightblue;
 }
 
 tr.header {
@@ -30,4 +30,8 @@ tr.header {
 
 td {
     border: 2px solid gray;
+}
+
+td:first-child {
+    font-weight: bold;
 }
