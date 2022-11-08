@@ -42,7 +42,7 @@
             <tr>
                 <td>Shipping</td>
                 <td colspan="2"><?php echo $shipping;?></td>
-                <td>$
+                <td>
                     <?php
                         if($shipping == "Free 7 day") {
                             echo "$0";
