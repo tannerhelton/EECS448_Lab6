@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercise1</title>
 </head>
 <body>
@@ -13,30 +9,7 @@
         };
     </style>
     <table style="border: 2px black solid;">
-        <?php
-        for($i = 0; $i < 101; $i++) {
-            echo "<tr>";
-                for($x = 0; $x < 101; $x++) {
-                    echo "<td>";
-                    if($i == 0) {
-                        if($x != 0) {
-                            echo $x;
-                        }
-                    } else if($x == 0) {
-                        if($i != 0) {
-                            echo $i;
-                        }
-                    } else {
-                        echo $i*$x;
-                    }
-                    echo "</td>";
-                }
-            echo "</tr>";
-        }
-
-        error_reporting(E_ALL);
-        ini_set("display_errors",1);
-        ?>
+        <?php include 'exercise1.php';?>
     </table>
 </body>
 </html>
