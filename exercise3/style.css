@@ -15,9 +15,10 @@ body {
 table {
     background-color: aqua;
     border: 2px solid gray;
+    padding: 3px;
 }
 
-tr:odd {
+tr:nth-child(odd) {
     background-color: blue;
 }
 
@@ -25,4 +26,8 @@ tr.header {
     font-size: larger;
     font-weight: bold;
     background-color: brown;
+}
+
+td {
+    border: 2px solid gray;
 }
