@@ -6,8 +6,51 @@
         <?php
             $user = $_POST["user"];
             $pass = $_POST["pass"];
+            $i1q = $_POST["i1q"];
+            $i2q = $_POST["i2q"];
+            $i3q = $_POST["i3q"];
+            $shipping = $_POST["shipping"];
+            $total = 0;
             echo "<h1>Welcome ".$user."!</h1>";
             echo "<p>You logged in with password: ".$pass."</p>";
-        ?> 
+        ?>
+        <table>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td>Cost Per Item</td>
+                <td>Subtotal</td>
+            </tr>
+            <tr>
+                <td>Porsche 911</td>
+                <td><?php echo $i1q;?></td>
+                <td>$150000</td>
+                <td>$<?php echo $i1q*150000;?></td>
+            </tr>
+            <tr>
+                <td>McLaren 600LT</td>
+                <td><?php echo $i2q;?></td>
+                <td>$230000</td>
+                <td>$<?php echo $i2q*230000;?></td>
+            </tr>
+            <tr>
+                <td>Ferrari laFerrari Aperta</td>
+                <td><?php echo $i3q;?></td>
+                <td>$4500000</td>
+                <td>$<?php echo $i3q*4500000;?></td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td><?php echo $shipping;?></td>
+                <td></td>
+                <td>$</td>
+            </tr>
+            <tr>
+                <td>Total Cost</td>
+                <td></td>
+                <td></td>
+                <td>$<?php echo $total;?></td>
+            </tr>
+        </table>
     </body>
 </html>

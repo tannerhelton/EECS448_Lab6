@@ -1,10 +1,3 @@
-const formChecker = () => {
-  var form = document.querySelector("form");
-  if (!form.checkValidity()) {
-    return false;
-  }
-};
-
 (function () {
   const form = document.querySelector("form");
   const checkboxes = form.querySelectorAll("input[type=checkbox]");

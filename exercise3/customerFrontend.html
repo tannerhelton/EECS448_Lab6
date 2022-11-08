@@ -11,9 +11,9 @@
     <h1>Welcome to Tanner's Store!</h1>
     <form action="customerBackend.php" method="post">
         <p>Items for Sale:</p>
-        <input type="checkbox" name="products" value="$150,000 - Porsche 911">$150,000 - Porsche 911
-        <br><input type="checkbox" name="products" value="$230,000 - McLaren 600LT">$230,000 - McLaren 600LT
-        <br><input type="checkbox" name="products" value="$4,500,000 - Ferrari laFerrari Aperta">$4,500,000 - Ferrari laFerrari Aperta
+        $150,000 - Porsche 911: Quantity <input type="number" name="i1q" min="0" required><br>
+        $230,000 - McLaren 600LT: Quantity <input type="number" name="i2q" min="0" required><br>
+        $4,500,000 - Ferrari laFerrari Aperta: Quantity <input type="number" name="i3q" min="0" required>
         <p>Shipping Options:</p>
         <input type="radio" name="shipping" value="Free 7 day" required>Free 7 day
         <br><input type="radio" name="shipping" value="$50.00 over night">$50.00 over night
@@ -22,7 +22,7 @@
         Username: <input name="user" type="email" minLength="1" required>
         Password: <input name="pass" type="password" minLength="1" required>
         <br><br>
-        <input onsubmit="checkForm()" type="submit" value="Submit Order">
+        <input onsubmit="document.querySelector('form').checkValidity()" type="submit" value="Submit Order">
     </form>
     <br>
     <button onclick="document.querySelector('form').reset()">Reset Order</button>
