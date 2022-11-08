@@ -41,8 +41,7 @@
             </tr>
             <tr>
                 <td>Shipping</td>
-                <td><?php echo $shipping;?></td>
-                <td></td>
+                <td colspan="2"><?php echo $shipping;?></td>
                 <td>$
                     <?php
                         if($shipping == "Free 7 day") {
@@ -58,9 +57,7 @@
                 </td>
             </tr>
             <tr>
-                <td>Total Cost</td>
-                <td></td>
-                <td></td>
+                <td colspan="3">Total Cost</td>
                 <td>$<?php echo $total;?></td>
             </tr>
         </table>
