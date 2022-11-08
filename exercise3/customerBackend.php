@@ -15,7 +15,7 @@
             echo "<p>You logged in with password: ".$pass."</p>";
         ?>
         <table>
-            <tr>
+            <tr class="header">
                 <td></td>
                 <td>Quantity</td>
                 <td>Cost Per Item</td>
