@@ -10,7 +10,7 @@
             $i2q = $_POST["i2q"];
             $i3q = $_POST["i3q"];
             $shipping = $_POST["shipping"];
-            $total = 0;
+            $total = $i1q*150000+$i2q*230000+$i3q*4500000;
             echo "<h1>Welcome ".$user."!</h1>";
             echo "<p>You logged in with password: ".$pass."</p>";
         ?>
@@ -43,7 +43,19 @@
                 <td>Shipping</td>
                 <td><?php echo $shipping;?></td>
                 <td></td>
-                <td>$</td>
+                <td>$
+                    <?php
+                        if($shipping == "Free 7 day") {
+                            echo "$0";
+                        } else if ($shipping == "$50.00 over night") {
+                            echo "$50";
+                            $total += 50;
+                        } else if ($shipping == "$50.00 over night") {
+                            echo "$5";
+                            $total += 5;
+                        }
+                    ?>
+                </td>
             </tr>
             <tr>
                 <td>Total Cost</td>
