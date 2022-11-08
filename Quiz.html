@@ -1,36 +1,29 @@
 <html>
     <body>
         <form method="post" action="<?php include 'Quiz.php';?>">
-            <p>Question 1: What does HTML stand for?</p>
-            <input type="radio" id="a1" name="1" value="a1">
-            <label for="a1">a) Hyper Team Matching League</label><br>
-            <input type="radio" id="b1" name="1" value="b1">
-            <label for="b1">b) HyperText Markup Language</label><br>
-            <input type="radio" id="c1" name="1" value="c1">
-            <label for="c1">c) Huge Text Mapping List</label><br>
-            <input type="radio" id="d1" name="1" value="d1">
-            <label for="d1">d) HT Machine Learning</label>
+            <p>Question 1: What's the acronym for HyperText Markup Language</p>
+            <input type="radio" id="a1" name="1" value="HTTML">
+            <label for="a1">a) HTTML</label><br>
+            <input type="radio" id="b1" name="1" value="HTML">
+            <label for="b1">b) HTML</label><br>
+            <input type="radio" id="c1" name="1" value="HML">
+            <label for="c1">c) HML</label><br>
+            <input type="radio" id="d1" name="1" value="HMU">
+            <label for="d1">d) HMU</label>
 
             <br>  
 
-            <p>Question 2: What is the internet?</p>
-            <input type="radio" id="a2" name="2" value="a2">
-            <label for="a2">a) A net for soccer</label><br>
-            <input type="radio" id="b2" name="2" value="b2">
-            <label for="b2">b) The interconnected network of computers and devices across the world</label><br>
-            <input type="radio" id="c2" name="2" value="c2">
-            <label for="c2">c) A book</label><br>
-            <input type="radio" id="d2" name="2" value="d2">
-            <label for="d2">d) An interesting movie</label>
+            <p>Question 2: What language is being used for this form?</p>
+            <input type="radio" id="a2" name="2" value="Java">
+            <label for="a2">a) Java</label><br>
+            <input type="radio" id="b2" name="2" value="PHP">
+            <label for="b2">b) PHP</label><br>
+            <input type="radio" id="c2" name="2" value="SQL">
+            <label for="c2">c) SQL</label><br>
+            <input type="radio" id="d2" name="2" value="Rust">
+            <label for="d2">d) Rust</label>
             <br><br>
             <input type="submit" value="Submit quiz">
         </form>
-
-        <?php
-        echo "<p>Your Answers:";
-        echo $q1;
-        echo $q2;
-        echo "</p>";
-        ?>
     </body>
 </html>
